@@ -6,10 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 2019-11-23
+### Added
+- Initial Configuration and Html Builder .NET projects;
+- Initial testing project;
+- Representation of some HTML elements;
+- Basic HTML elements testing;
+- Dockerfile on each project.
+
+### Changed
+- Dotnet project's folder structure.
+
+### Fixed
+- Encoding and newline feed on every file.
+
 ## [0.0.1] - 2019-11-23
 ### Added
-- This changelog;
-- Initial .NET project structure.
+- This changelog.
 
 ### Changed
 - LICENSE to reflect year and copyrights;
