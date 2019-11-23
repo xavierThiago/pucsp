@@ -10,12 +10,17 @@ namespace PucSp.DesignPatterns.HtmlBuilder
 
         public string Tag => throw new System.NotImplementedException();
 
+        public IHtmlElement AddNode(IHtmlElement node)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public IHtmlElement AddAttribute(string name, string value)
         {
             throw new System.NotImplementedException();
         }
 
-        public IHtmlElement AddNode(IHtmlElement node)
+        public IHtmlElement RemoveAttribute(string name)
         {
             throw new System.NotImplementedException();
         }

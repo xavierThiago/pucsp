@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.3] - 2019-11-23
+### Added
+- RemoteAttribute method in IHtmlElement interface.
+- Node class, that will be responsible to manage element's attributes, etc.
+
+### Changed
+- Some code organization.
+
 ## [0.0.2] - 2019-11-23
 ### Added
 - Initial Configuration and Html Builder .NET projects;

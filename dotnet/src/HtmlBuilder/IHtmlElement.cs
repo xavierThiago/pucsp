@@ -4,8 +4,9 @@ namespace PucSp.DesignPatterns.HtmlBuilder
     {
         string Tag { get; }
 
-        IHtmlElement AddAttribute(string name, string value);
         IHtmlElement AddNode(IHtmlElement node);
+        IHtmlElement AddAttribute(string name, string value);
+        IHtmlElement RemoveAttribute(string name);
 
         string ToHtml();
     }
