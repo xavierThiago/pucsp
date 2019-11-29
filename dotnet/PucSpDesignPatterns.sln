@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PucSp.DesignPatterns.HtmlBu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PucSp.DesignPatterns.Tests", "src\tests\PucSp.DesignPatterns.Tests.csproj", "{95104885-34EC-45C0-85E2-1298C9A323DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PucSp.DesignPatterns.ConfigurationManager", "src\ConfigurationManager\PucSp.DesignPatterns.ConfigurationManager.csproj", "{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,9 +48,22 @@ Global
 		{95104885-34EC-45C0-85E2-1298C9A323DF}.Release|x64.Build.0 = Release|Any CPU
 		{95104885-34EC-45C0-85E2-1298C9A323DF}.Release|x86.ActiveCfg = Release|Any CPU
 		{95104885-34EC-45C0-85E2-1298C9A323DF}.Release|x86.Build.0 = Release|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Debug|x64.Build.0 = Debug|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Debug|x86.Build.0 = Debug|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Release|x64.ActiveCfg = Release|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Release|x64.Build.0 = Release|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Release|x86.ActiveCfg = Release|Any CPU
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3A85EEF9-6F96-4653-8415-28DC5E03806F} = {CC4EA8EF-0406-4125-9AE2-EF39E5CA0F2B}
 		{95104885-34EC-45C0-85E2-1298C9A323DF} = {CC4EA8EF-0406-4125-9AE2-EF39E5CA0F2B}
+		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB} = {CC4EA8EF-0406-4125-9AE2-EF39E5CA0F2B}
 	EndGlobalSection
 EndGlobal

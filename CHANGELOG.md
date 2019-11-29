@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.4] - 2019-11-28
+### Added
+- Added configuration management project;
+- Light DDD project structure.
+
 ## [0.0.3] - 2019-11-23
 ### Added
 - RemoteAttribute method in IHtmlElement interface.
