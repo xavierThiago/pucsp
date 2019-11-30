@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.6] - 2019-11-30
+### Added
+- Created initial DatabaseConnection project, featuring factory, builder and object pool patterns.
+
+### Changed
+- ConfigurationManager project framework target to .NETStandar.
+
 ## [0.0.5] - 2019-11-30
 ### Added
 - .gitattributes to control eol and other stuff;

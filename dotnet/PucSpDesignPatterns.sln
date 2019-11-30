@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PucSp.DesignPatterns.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PucSp.DesignPatterns.ConfigurationManager", "src\ConfigurationManager\PucSp.DesignPatterns.ConfigurationManager.csproj", "{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PucSp.DesignPatterns.ConnectionPool", "src\ConnectionPool\PucSp.DesignPatterns.ConnectionPool.csproj", "{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,10 +62,23 @@ Global
 		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Release|x64.Build.0 = Release|Any CPU
 		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Release|x86.ActiveCfg = Release|Any CPU
 		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB}.Release|x86.Build.0 = Release|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Debug|x64.Build.0 = Debug|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Debug|x86.Build.0 = Debug|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Release|x64.ActiveCfg = Release|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Release|x64.Build.0 = Release|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Release|x86.ActiveCfg = Release|Any CPU
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3A85EEF9-6F96-4653-8415-28DC5E03806F} = {CC4EA8EF-0406-4125-9AE2-EF39E5CA0F2B}
 		{95104885-34EC-45C0-85E2-1298C9A323DF} = {CC4EA8EF-0406-4125-9AE2-EF39E5CA0F2B}
 		{1BD3FEF0-D38A-41A4-8763-85479EAE83DB} = {CC4EA8EF-0406-4125-9AE2-EF39E5CA0F2B}
+		{AEBF921D-AF3B-4DDF-98C5-F1E96275E764} = {CC4EA8EF-0406-4125-9AE2-EF39E5CA0F2B}
 	EndGlobalSection
 EndGlobal
