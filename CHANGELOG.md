@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.5] - 2019-11-30
+### Added
+- .gitattributes to control eol and other stuff;
+- .dockerignore om all projects;
+- Dockerfile in all projects to build and execute .NETStandard 2.1;
+- HtmlAttribute class;
+- Unit tests to validate HTML attribute creation;
+- Light DDD file structure in ConfigurationManager project.
+
+### Changed
+- Namespace naming.
+
 ## [0.0.4] - 2019-11-28
 ### Added
 - Added configuration management project;

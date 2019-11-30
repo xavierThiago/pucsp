@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace PucSp.DesignPatterns.HtmlBuilder
+namespace PucSp.DesignPatterns.HtmlBuilder.Core
 {
     public abstract class HtmlBuilder : IHtmlElement
     {
@@ -16,6 +16,11 @@ namespace PucSp.DesignPatterns.HtmlBuilder
         }
 
         public IHtmlElement AddAttribute(string name, string value)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IHtmlElement AddAttribute(HtmlAttribute attribute)
         {
             throw new System.NotImplementedException();
         }

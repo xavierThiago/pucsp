@@ -1,5 +1,5 @@
 using System;
-using PucSp.DesignPatterns.HtmlBuilder;
+using PucSp.DesignPatterns.HtmlBuilder.Core;
 using Xunit;
 
 namespace PucSp.DesignPatterns.Tests
@@ -116,6 +116,63 @@ namespace PucSp.DesignPatterns.Tests
             //Assert
             Assert.NotNull(element);
             Assert.Equal(Tag, element.Tag);
+        }
+
+        [Theory]
+        [InlineData(typeof(BoldElement))]
+        [InlineData(typeof(DivisionElement))]
+        [InlineData(typeof(EmphasisElement))]
+        [InlineData(typeof(ItalicElement))]
+        [InlineData(typeof(ListItemElement))]
+        [InlineData(typeof(SpanElement))]
+        [InlineData(typeof(UnorderedListElement))]
+        public void Validate_Node_Elements_Should_Create_Attributes_Successfully(Type @class)
+        {
+            //Arrange
+            var instance = Activator.CreateInstance(@class, "This is a dummy text.") as IHtmlElement;
+            var node = instance as Node;
+            string name = "class";
+            string value = "col-12";
+            var attribute = new HtmlAttribute(name, value);
+
+            //Act
+            instance.AddAttribute(attribute);
+
+            //Assert
+            Assert.NotNull(instance);
+            Assert.NotNull(node.Attributes);
+            Assert.NotEmpty(node.Attributes);
+            Assert.Contains(node.Attributes, x => x.Name == name && x.Value == value);
+        }
+
+        [Theory]
+        [InlineData(typeof(BoldElement))]
+        [InlineData(typeof(DivisionElement))]
+        [InlineData(typeof(EmphasisElement))]
+        [InlineData(typeof(ItalicElement))]
+        [InlineData(typeof(ListItemElement))]
+        [InlineData(typeof(SpanElement))]
+        [InlineData(typeof(UnorderedListElement))]
+        public void Validate_Node_Elements_Should_Not_Create_Duplicate_Attribute(Type @class)
+        {
+            //Arrange
+            var instance = Activator.CreateInstance(@class, "This is a dummy text.") as IHtmlElement;
+            var node = instance as Node;
+            string name = "class";
+            string value = "col-12";
+            var attribute = new HtmlAttribute(name, value);
+
+            //Act
+            instance.AddAttribute(attribute);
+            instance.AddAttribute(attribute);
+            instance.AddAttribute(attribute);
+
+            //Assert
+            Assert.NotNull(instance);
+            Assert.NotNull(node.Attributes);
+            Assert.NotEmpty(node.Attributes);
+            Assert.Contains(node.Attributes, x => x.Name == name && x.Value == value);
+            Assert.True(node.Attributes.Count == 1);
         }
     }
 }

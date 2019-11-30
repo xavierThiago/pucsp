@@ -1,6 +1,6 @@
 using System;
 
-namespace PucSp.DesignPatterns.ConfigurationManager
+namespace PucSp.DesignPatterns.ConfigurationManager.Host
 {
     public class Program
     {
