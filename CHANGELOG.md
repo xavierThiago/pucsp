@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.7] - 2019-12-21
+### Added
+- Configuration factory;
+- Enumeration of some configuration providers;
+- JsonFileConfiguration, QueueConfiguration and EnvironmentConfiguration settings providers.
+
+### Fixed
+- ConfigurationManager dockefile;
+- ConfigurationManager project framework target and output type.
+
 ## [0.0.6] - 2019-11-30
 ### Added
 - Created initial DatabaseConnection project, featuring factory, builder and object pool patterns.

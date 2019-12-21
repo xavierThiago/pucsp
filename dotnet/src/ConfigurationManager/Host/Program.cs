@@ -1,4 +1,5 @@
 using System;
+using PucSp.DesignPatterns.ConfigurationManager.Core;
 
 namespace PucSp.DesignPatterns.ConfigurationManager.Host
 {
@@ -6,7 +7,9 @@ namespace PucSp.DesignPatterns.ConfigurationManager.Host
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var configuration = DatabaseSettings.Instance;
+
+            Console.WriteLine(configuration.ToJson());
         }
     }
 }
