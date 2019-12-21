@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.9] - 2019-12-21
+### Added
+- Console logging on HTML builder project's startup.
+
+### Fixed
+- HTML builder dockerfile.
+
 ## [0.0.8] - 2019-12-21
 ### Added
 - ToHtml method in all HTML elements;

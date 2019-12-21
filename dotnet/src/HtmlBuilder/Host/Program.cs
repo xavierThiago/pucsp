@@ -1,4 +1,5 @@
 ﻿using System;
+using PucSp.DesignPatterns.HtmlBuilder.Core;
 
 namespace PucSp.DesignPatterns.HtmlBuilder.Host
 {
@@ -6,7 +7,10 @@ namespace PucSp.DesignPatterns.HtmlBuilder.Host
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var element = new SpanElement("Here I am. This is me.");
+            string html = element.AddNode(new SpanElement("inner")).AddNode(new ItalicElement("LOL!")).ToHtml();
+
+            Console.WriteLine(html);
         }
     }
 }
