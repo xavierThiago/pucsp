@@ -174,5 +174,21 @@ namespace PucSp.DesignPatterns.Tests
             Assert.Contains(node.Attributes, x => x.Name == name && x.Value == value);
             Assert.True(node.Attributes.Count == 1);
         }
+
+        [Fact]
+        public void Validate_Html_Tree_Returns_Non_Empty_String()
+        {
+            //Arrange
+            const string Expected = "<span>Here I am. This is me.<span>inner</span><span>LOL!</span></span>";
+
+            var element = new SpanElement("Here I am. This is me.");
+
+            //Act
+            string html = element.AddNode(new SpanElement("inner")).AddNode(new SpanElement("LOL!")).ToHtml();
+
+            //Assert
+            Assert.NotNull(element);
+            Assert.Equal(Expected, html);
+        }
     }
 }

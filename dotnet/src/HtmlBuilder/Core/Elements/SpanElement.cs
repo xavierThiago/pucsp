@@ -1,12 +1,13 @@
 using System;
+using System.Text;
 
 namespace PucSp.DesignPatterns.HtmlBuilder.Core
 {
-    public class SpanElement : Node, IHtmlElement
+    public class SpanElement : Node
     {
         private readonly string _text;
 
-        public string Tag => "span";
+        public override string Tag => "span";
 
         public SpanElement(string text)
         {
@@ -18,56 +19,22 @@ namespace PucSp.DesignPatterns.HtmlBuilder.Core
             this._text = text;
         }
 
-        public IHtmlElement AddNode(IHtmlElement node)
+        public override string ToHtml()
         {
-            throw new NotImplementedException();
-        }
+            var result = new StringBuilder();
 
-        public IHtmlElement AddAttribute(string name, string value)
-        {
-            if (name == null)
+            result.Append($"<{this.Tag}>{this._text}");
+
+            foreach (var item in base.nodes)
             {
-                throw new ArgumentNullException(nameof(name));
+                result.Append(item.ToHtml());
             }
 
-            if (name.Length == 0)
-            {
-                throw new ArgumentException("Attribute name can not be empty.", nameof(name));
-            }
+            result.Append($"</{this.Tag}>");
 
-            if (value == null)
-            {
-                throw new ArgumentNullException(nameof(value));
-            }
-
-            return this.AddAttribute(new HtmlAttribute(name, value));
+            return result.ToString();
         }
 
-        public IHtmlElement AddAttribute(HtmlAttribute attribute)
-        {
-            if (attribute == null)
-            {
-                throw new ArgumentNullException(nameof(attribute));
-            }
-
-            base.attributes.Add(attribute);
-
-            return this;
-        }
-
-        public IHtmlElement RemoveAttribute(string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string ToHtml()
-        {
-            throw new NotImplementedException();
-        }
-
-        protected override string AsTagString()
-        {
-            throw new NotImplementedException();
-        }
+        protected override string AsTagString() => $"<{this.Tag}>{this._text}</{this.Tag}>";
     }
 }

@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.8] - 2019-12-21
+### Added
+- ToHtml method in all HTML elements;
+- Unit tests on HTML builder.
+
+### Changed
+- Moved several subclasses' methods to the abstract (Node).
+
+### Fixed
+- .NET framework target on HTML Builder project.
+
 ## [0.0.7] - 2019-12-21
 ### Added
 - Configuration factory;
